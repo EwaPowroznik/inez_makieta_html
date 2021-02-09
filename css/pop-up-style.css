@@ -27,15 +27,15 @@ body{
      left:0;
      z-index:10;
      opacity:0.95;
-     /* visibility:hidden; */
+     visibility:hidden;
      display:flex;
      transition:all, 2s;
  }
- /* .pop-up:target{
+  .pop-up:target{
      opacity:0.95;
      visibility:visible;
      transition:all, 2s; 
- } */
+ } 
 
  /* container na treść */
   .pop-up-content, .pop-up-content1{
@@ -69,7 +69,6 @@ body{
     position:absolute;  
     z-index: -1;
     opacity:0.3;  
-
  }
 
  .tresc{
