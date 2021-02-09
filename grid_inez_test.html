@@ -26,21 +26,92 @@
              <div class="main-title">
                  <h2>W tej rundzie </h2>
              </div>
+
+             <!-- wydarzenie -->
              <div class="wydarzenie1">
-                 <h2>Wydarzenie <i class="fas fa-exclamation"></i></h2>
-                 <p>Każda wyspa przynosi nowe wyzwania: </p>
+                <h2>Wydarzenie <i class="fas fa-exclamation"></i></h2>
+                <p>Każda wyspa przynosi nowe wyzwania: </p>
                 <p>'Wizyta tubylców: wyprawa, która na koniec tury posiada najwięcej złota na PLAŻY, otrzyma dodatkowe 2 sztuki złota. </p> 
             </div>
+
+            <!-- mapa -->
               <div class="mapa">
                  <h2>Mapa <i class="fas fa-map"></i></h2>
-                 <p>Możecie kupić mapę dla siebie lub innego zespołu. Mapa kosztuje 2 i powoduje, że Odkrywca z mapą wykopie 2 złota więcej</p></div>
+                 <p>Możecie kupić mapę dla siebie lub innego zespołu. Mapa kosztuje 2 i powoduje, że Odkrywca z mapą wykopie 2 złota więcej</p>
+                 <div class="item1">
+                     <input type="checkbox"id="checkbox" name="Checkbox" class="visually-hidden">
+                     <label for="checkbox"> Chcemy mapę!</label>
+                </div>  
+                <div class="flex-container">
+                    <form>
+                        <p>Mapę kupujemy dla:</p> 
+                        <div class="item">
+                            <input
+                                    class="radio visually-hidden"
+                                    type="radio"
+                                    id="pomaranczowi"
+                                    name="mapfor"
+                                    value="teamA"/>
+                                    <!-- bind:group={mapChoice}
+                                    disabled={mapLabels.pomaranczowi.bought === true} -->
+                                <label for="pomaranczowi"class=" radio log-orange">Pomaranczowi
+                                    <!-- {mapLabels.pomaranczowi.variant} -->
+                                    </label>
+                            <input
+                                    class="radio visually-hidden"
+                                    type="radio"
+                                    id="zieloni"
+                                    name="mapfor"
+                                    value="teamB"/>
+                                    <!-- bind:group={mapChoice}
+                                    disabled={mapLabels.zieloni.bought === true} -->
+                                <label for="zieloni" class=" radio log-green">Zieloni
+                                <!-- {mapLabels.zieloni.variant} -->
+                                </label>
+                            <input
+                                    class="radio visually-hidden"
+                                    type="radio"
+                                    id="niebiescy"
+                                    name="mapfor"
+                                    value="teamC"/>
+                                    <!-- bind:group={mapChoice}
+                                    disabled={mapLabels.niebiescy.bought === true} -->
+                                <label for="niebiescy" class="radio log-blue">Niebiescy
+                                <!-- {mapLabels.niebiescy.variant} -->
+                                </label>
+                            <input
+                                    class="radio visually-hidden"
+                                    type="radio"
+                                    id="fioletowi"
+                                    name="mapfor"
+                                    value="teamD"/>
+                                    <!-- bind:group={mapChoice}
+                                    disabled={mapLabels.fioletowi.bought === true} -->
+                                 <label for="fioletowi" class=" radio log-violet">Fioletowi
+                                <!-- {mapLabels.fioletowi.variant} -->
+                                 </label>  
+                        </div>
+                    </form>
+                    <div class="item"> 
+                       
+                        <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
+                         <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
+                        <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
+                        <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
+                        <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
+                        <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
+                    </div>
+                </div> 
+                <button class="message_form_button" type="submit">Potwierdzam!</button>
+                </div>
              <div class="tawerna1">
                  <h2>Tawerna <i class="fas fa-beer"></i></h2>
                     <div class="flex-container">
                         <form id='player_choice'>
                             <div class="item">
                                 <label for="wybor1">Wybieram Pirata
-                                    <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden"><div class="control-me1"></div> </label>
+                                    <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
+                                    <div class="control-me1"></div> </label>
                                 <label for="wybor2">Wybieram Odkrywcę
                                     <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> </label> 
                             </div>
@@ -54,9 +125,9 @@
                                     <div class="control-me4"></div>
                                 </label>
                             </div>
-                            <button class="message_form_button" type="submit">Potwierdzam!</button>
                       </form>
                     </div>
+                    <button class="message_form_button" type="submit">Potwierdzam!</button>
             </div>
          </div>
          <!-- obszar - przebieg gry -->
@@ -65,8 +136,8 @@
                  <h2>Przebieg gry</h2>
              </div> 
              <div class="log-list">
-                    <table class="table">
-                        <thead class="thead">
+                    <table>
+                        <thead>
                             <tr>
                             <th>Runda</th>
                             <th class="log-orange">Pomaranczowi</th>
@@ -112,37 +183,37 @@
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
                             </tr>
-                            <!-- <tr>
+                            <tr>
                             <td >6</td>
                             <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> -->
-                            <!-- <td >7</td>
+                            </tr> 
+                             <td >7</td>
                             <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> -->
-                            <!-- <td >8</td>
+                            </tr> 
+                             <td >8</td>
                             <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> -->
-                            <!-- <td >9</td>
+                            </tr> 
+                            <td >9</td>
                             <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> -->
-                            <!-- <td >10</td>
+                            </tr> 
+                             <td >10</td>
                             <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                             <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> -->
+                            </tr>  
                             <tr>
                             <td id="totalscore">Plaża</td>
                             <td id="scoreA">00</td>
