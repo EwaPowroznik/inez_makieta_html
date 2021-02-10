@@ -9,38 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pop-up-style.css">
     <title>grid-inez-test</title>
-    
-    
  <body>
-     <!-- główny container -->
-     <div class="container">
+    <!-- główny container -->
+    <div class="container">
          <!-- header -->
-         <header class="header">
-             <h1 class="header-item">Czarna Inez</h1>
-             <i class="fas fa-skull-crossbones fa-3x header-item"></i>
-             <!-- <h1>Numer rozgrywki</h1> -->
-             <a href="#pop-up"><i class="far fa-compass fa-2x header-item"></i> </a>
-         </header>
-          <!-- obszar aktualnej tury -->
-         <div class="main">
-             <div class="main-title">
-                 <h2>W tej rundzie </h2>
-             </div>
-
-             <!-- wydarzenie -->
-             <div class="wydarzenie1">
+        <div class="header">
+            <h1 class="header-item">Czarna Inez</h1>
+            <i class="fas fa-skull-crossbones fa-2x header-item"></i>
+            <a href="#pop-up"><i class="far fa-compass fa-2x header-item"></i> </a> 
+        </div>
+         <!-- obszar aktualnej tury -->
+        <div class="main">
+            <div class="main-title">
+                <h2>W tej rundzie </h2>
+            </div>
+            <!-- wydarzenie -->
+            <div class="wydarzenie1">
                 <h2>Wydarzenie <i class="fas fa-exclamation"></i></h2>
                 <p>Każda wyspa przynosi nowe wyzwania: </p>
                 <p>'Wizyta tubylców: wyprawa, która na koniec tury posiada najwięcej złota na PLAŻY, otrzyma dodatkowe 2 sztuki złota. </p> 
             </div>
-
-            <!-- mapa -->
-              <div class="mapa">
-                 <h2>Mapa <i class="fas fa-map"></i></h2>
-                 <p>Możecie kupić mapę dla siebie lub innego zespołu. Mapa kosztuje 2 i powoduje, że Odkrywca z mapą wykopie 2 złota więcej</p>
-                 <div class="item1">
-                     <input type="checkbox"id="checkbox" name="Checkbox" class="visually-hidden">
-                     <label for="checkbox"> Chcemy mapę!</label>
+            <div class="mapa">
+                <h2>Mapa <i class="fas fa-map"></i></h2>
+                   <p>Możecie kupić mapę dla siebie lub innego zespołu. Mapa kosztuje 2 i powoduje, że Odkrywca z mapą wykopie 2 złota więcej</p>
+                <div class="item1">
+                    <input type="checkbox"id="checkbox" name="Checkbox" class="visually-hidden">
+                    <label for="checkbox"> Chcemy mapę!</label>
                 </div>  
                 <div class="flex-container">
                     <form>
@@ -87,15 +81,15 @@
                                     value="teamD"/>
                                     <!-- bind:group={mapChoice}
                                     disabled={mapLabels.fioletowi.bought === true} -->
-                                 <label for="fioletowi" class=" radio log-violet">Fioletowi
+                                <label for="fioletowi" class=" radio log-violet">Fioletowi
                                 <!-- {mapLabels.fioletowi.variant} -->
-                                 </label>  
+                                </label>  
                         </div>
                         <button class="message_form_button" type="submit">Potwierdzam!</button>
                     </form>
                     <div class="item"> 
                         <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
-                         <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
+                        <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
                         <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
                         <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
                         <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
@@ -105,290 +99,303 @@
                         <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
                         <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p> -->
                     </div>
-                </div> 
                 </div>
-             <div class="tawerna1">
-                 <h2>Tawerna <i class="fas fa-beer"></i></h2>
-                    <div class="flex-container">
-                        <form id='player_choice'>
-                            <div class="item">
-                                <label for="wybor1">Wybieram Pirata
-                                    <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
-                                    <div class="control-me1"></div> </label>
-                                <label for="wybor2">Wybieram Odkrywcę
-                                    <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> </label> 
-                            </div>
-                            <div class="item">
-                                <label for="wybor3">Wybieram Czarną Inez
-                                    <input type="radio" id="wybor3" name="dziewczynka" value="Czarna Inez" class="visually-hidden">
-                                    <div class="control-me3"></div>
-                                </label>
-                                <label for="wybor4">Płynę bez Inez
-                                     <input type="radio" id="wybor4" name="dziewczynka" value="Biala Inez" class="visually-hidden" >
-                                    <div class="control-me4"></div>
-                                </label>
-                            </div>
-                      </form>
-                    </div>
-                    <button class="message_form_button" type="submit">Potwierdzam!</button>
             </div>
-         </div>
-         <!-- obszar - przebieg gry -->
-         <div class="log">
-             <div class="log-title">
-                 <h2>Przebieg gry</h2>
-             </div> 
-             <div class="log-list">
-                    <table>
-                        <thead>
-                            <tr>
-                            <th>Runda</th>
-                            <th class="log-orange">Pomaranczowi</th>
-                            <th class="log-green">Zieloni</th>
-                            <th class="log-violet">Fioletowi</th>
-                            <th class="log-blue">Niebiescy</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr id="round_1">
-                            <td id="round1">1</td>
-                            <td id = "scoreA_1"> odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>
-                            <!-- szereg wartości do przetestowania makiety, do skasowania -->
-                            <tr>
-                            <td >2</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br>  Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br>  Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>
-                            <tr>
-                            <td >3</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>
-                            <tr>
-                            <td >4</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>
-                            <tr>
-                            <td >5</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>
-                            <tr>
-                            <td >6</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> 
-                             <td >7</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> 
-                             <!-- <td >8</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> 
-                            <td >9</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr> 
-                             <td >10</td>
-                            <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
-                            <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                            </tr>   -->
-                            <tr>
-                            <td id="totalscore">Wynik</td>
-                            <td id="scoreA">00</td>
-                            <td id="scoreB" >00</td>
-                            <td id="scoreC">00</td>
-                            <td id="scoreD">00</td>
-                            </tr>
-                        </tbody>  
-                    </table>
-                    <table class="plaza">
-                        <thead class="hidden">
-                            <tr>
-                            <th>Runda</th>
-                            <th class="log-orange">Pomaranczowi</th>
-                            <th class="log-green">Zieloni</th>
-                            <th class="log-violet">Fioletowi</th>
-                            <th class="log-blue">Niebiescy</th>
-                            </tr>
-                        </thead>
-                        <tbody >
+            <div class="tawerna1">
+                <h2>Tawerna <i class="fas fa-beer"></i></h2>
+                <div class="flex-container">
+                    <form id='player_choice'>
+                        <div class="item">
+                            <label for="wybor1">Wybieram Pirata
+                                <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
+                                <div class="control-me1"></div> </label>
+                            <label for="wybor2">Wybieram Odkrywcę
+                                <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> </label> 
+                        </div>
+                        <div class="item">
+                            <label for="wybor3">Wybieram Czarną Inez
+                                <input type="radio" id="wybor3" name="dziewczynka" value="Czarna Inez" class="visually-hidden">
+                                <div class="control-me3"></div>
+                            </label>
+                            <label for="wybor4">Płynę bez Inez
+                                 <input type="radio" id="wybor4" name="dziewczynka" value="Biala Inez" class="visually-hidden" >
+                                <div class="control-me4"></div>
+                            </label>
+                        </div>
+                     </form>
+                </div>
+                <button class="message_form_button" type="submit">Potwierdzam!</button>
+            </div>
+        </div>
+        <!-- obszar - przebieg gry -->
+        <div class="log">
+            <div class="log-title">
+                <h2>Przebieg gry</h2>
+            </div> 
+            <div class="log-list">
+                <table>
+                    <thead>
                         <tr>
-                            <td id="totalscore">Plaża</td>
-                            <td id="scoreA">Trochę mniej niż wy</td>
-                            <td id="scoreB" >00</td>
-                            <td id="scoreC">Trochę więcej niż wy</td>
-                            <td id="scoreD">Dużo mniej niż wy</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                 <div class="end-score">
-                   <div><img src="img/inez-nobg.png" class="end-score-ikon"> <img src="img/korsarz-nobg.png" class="end-score-ikon"></div>  
-                   <h3>Inez zarobiła: {ines} sztuk złota <i class="fas fa-coins"></i></h3>
-                   <h3> Pirat zarobił: {pirate} sztuk złota <i class="fas fa-coins"></i></h3>
-                 </div>
-             </div>   
-         </div>
-         <!-- aside - dane graczy -->
-         <div class="aside">
+                        <th>Runda</th>
+                        <th class="log-orange">Pomaranczowi</th>
+                        <th class="log-green">Zieloni</th>
+                        <th class="log-violet">Fioletowi</th>
+                        <th class="log-blue">Niebiescy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="round_1">
+                        <td id="round1">1</td>
+                        <td id = "scoreA_1"> odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>
+                        <!-- szereg wartości do przetestowania makiety, do skasowania -->
+                        <tr>
+                        <td >2</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br>  Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br>  Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>
+                        <tr>
+                        <td >3</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>
+                        <tr>
+                        <td >4</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>
+                        <tr>
+                        <td >5</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>
+                        <tr>
+                        <td >6</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <td >7</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <!-- <td >8</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <td >9</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <td >10</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>   -->
+                        <tr>
+                        <td id="totalscore">Wynik</td>
+                        <td id="scoreA">00</td>
+                        <td id="scoreB">00</td>
+                        <td id="scoreC">00</td>
+                        <td id="scoreD">00</td>
+                        </tr>
+                    </tbody>  
+                </table>
+                <table class="plaza">
+                    <thead class="hidden">
+                        <tr>
+                        <th>Runda</th>
+                        <th class="log-orange">Pomaranczowi</th>
+                        <th class="log-green">Zieloni</th>
+                        <th class="log-violet">Fioletowi</th>
+                        <th class="log-blue">Niebiescy</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                    <tr>
+                        <td id="totalscore">Plaża</td>
+                        <td id="scoreA">Trochę mniej niż wy</td>
+                        <td id="scoreB" >00</td>
+                        <td id="scoreC">Trochę więcej niż wy</td>
+                        <td id="scoreD">Dużo mniej niż wy</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="end-score">
+                    <div>
+                        <img src="img/inez-nobg.png" class="end-score-ikon"> 
+                        <img src="img/korsarz-nobg.png" class="end-score-ikon">  
+                        <h3>Inez zarobiła: {ines} sztuk złota <i class="fas fa-coins"></i></h3>
+                        <h3> Pirat zarobił: {pirate} sztuk złota <i class="fas fa-coins"></i></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- aside - dane graczy -->
+        <div class="aside">
             <div class="stan">
                 <div>
                     <h3>Grasz jako:</h3>
                     <h3>Twój pseudonim: </h3>
                 </div>
+                <div>
                     <h3>Twój cel  <a href="#cel-niebieski"><i class="fas fa-anchor"></i></a></h3>
-            </div>
+                </div>
+            </div> 
             <div class="runda">
-                    <h2>Runda</h2>
-                    <h2>Aktywni gracze:</h2>
+                <h2>Runda</h2>
+                <h2>Aktywni gracze:</h2>
             </div>
             <div class="gracze">
-                    <div class="orange obecnosc border-left"><span class="team-name">Pomaranczowa Załoga</span>
-                        <ul class="li-obecnosc">
-                            <div class="li">Gracz1</div>
-                            <div class="li">Gracz2</div>
-                            <div class="li">Gracz3</div>
-                            <div class="li">Gracz4</div>
-                        </ul>
-                    </div>
-                    <div class="orange-stan obecnosc border-right"><h3>JEst OK!</h3></div>
-                    <div class="green obecnosc border-left"><span class="team-name">Zielona Załoga</span>
-                        <ul class="li-obecnosc">
-                            <div class="li">Gracz1</div>
-                            <div class="li">Gracz2</div>
-                            <div class="li">Gracz3</div>
-                            <div class="li">Gracz4</div>
-                        </ul>
-                    </div>
-                    <div class="green-stan obecnosc border-right"><h3>JEst OK!</h3></div>
-                    <div class="violet obecnosc border-left"><span  class="team-name">Fioletowa Załoga</span>
-                        <ul class="li-obecnosc">
-                            <div class="li">Gracz1</div>
-                           <div class="li">Gracz2</div>
-                           <div class="li">Gracz3</div>
-                           <div class="li">Gracz4</div>
-                        </ul>
-                    </div>
-                    <div class="violet-stan obecnosc border-right"><h3>JEst OK!</h3></div>
-                    <div class="blue obecnosc border-left"><span  class="team-name">Niebieska Załoga</span>
-                        <ul class="li-obecnosc">
-                            <div class="li">Gracz1</div>
-                            <div class="li">Gracz2</div>
-                            <div class="li">Gracz3</div>
-                            <div class="li">Gracz4</div>
-                        </ul>
-                    </div>
-                    <div class="blue-stan obecnosc border-right"><h3>JEst OK!</h3></div>
-                    <div class="trener obecnosc border-left"><span  class="team-name">Zespół trenerski</span>
-                        <ul class="li-obecnosc">
-                            <div class="li">Trener1</div>
-                           <div class="li">Trener2</div>
-                           
-                        </ul>
-                    </div>
-                    <div class="trener-stan obecnosc border-right"><h3>JEst OK!</h3></div>
+                <div class="orange obecnosc border-left"><span class="team-name">Pomaranczowa Załoga</span>
+                    <ul class="li-obecnosc">
+                        <div class="li">Gracz1</div>
+                        <div class="li">Gracz2</div>
+                        <div class="li">Gracz3</div>
+                        <div class="li">Gracz4</div>
+                    </ul>
+                </div>
+                <div class="orange-stan obecnosc border-right">
+                    <h3>JEst OK!</h3>
+                </div>
+                <div class="green obecnosc border-left"><span class="team-name">Zielona Załoga</span>
+                    <ul class="li-obecnosc">
+                        <div class="li">Gracz1</div>
+                        <div class="li">Gracz2</div>
+                        <div class="li">Gracz3</div>
+                        <div class="li">Gracz4</div>
+                    </ul>
+                </div>
+                <div class="green-stan obecnosc border-right">
+                    <h3>JEst OK!</h3>
+                </div>
+                <div class="violet obecnosc border-left"><span  class="team-name">Fioletowa Załoga</span>
+                    <ul class="li-obecnosc">
+                        <div class="li">Gracz1</div>
+                       <div class="li">Gracz2</div>
+                       <div class="li">Gracz3</div>
+                       <div class="li">Gracz4</div>
+                    </ul>
+                </div> 
+                <div class="violet-stan obecnosc border-right">
+                    <h3>JEst OK!</h3>
+                </div>
+                <div class="blue obecnosc border-left"><span  class="team-name">Niebieska Załoga</span>
+                    <ul class="li-obecnosc">
+                        <div class="li">Gracz1</div>
+                        <div class="li">Gracz2</div>
+                        <div class="li">Gracz3</div>
+                        <div class="li">Gracz4</div>
+                    </ul>
+                </div>
+                <div class="blue-stan obecnosc border-right"><h3>JEst OK!</h3></div>
+                <div class="trener obecnosc border-left"><span  class="team-name">Zespół trenerski</span>
+                    <ul class="li-obecnosc">
+                        <div class="li">Trener1</div>
+                       <div class="li">Trener2</div>
+                    </ul>
+                </div>
+                <div class="trener-stan obecnosc border-right">
+                    <h3>JEst OK!</h3>
+                </div>
             </div> 
         </div>
-        <div class="pop-ups">
-            <div class="pop-up" id="pop-up">
-                <div class="pop-up-content">
-                    <div class="tresc">
-                        <div class="rules">
-                            <h3>Zasady na start</h3>
-                            <p>W trakcie waszej podróży odwiedzicie 10 wysp. Jedna wyspa na szlaku to jedna tura gry. Ostatnia wyspa jest większa niż pozostałe i 10 tura może potrwać dłużej - ale o tym póżniej. <br> Przed odwiedzeniem każdej z wysp wybieracie się do lokalnej tawerny i rekrutujecie ludzi, którzy pomogą wam spełnić Wasz cel. Na początku możecie wybrać tylko jedną osobę. Wasz wybór stanie się jawny, gdy wszystkie załogi zdecydują kogo rekrutują - i wtedy zobaczycie efekt waszych działań.<br>
-                            Kolejne wyspy przyniosą dodatkowe możliwości - śledźcie komunikaty pojawiające się w trakcie gry.  W trakcie podróży nie zapomnijcie też o Waszym <i class="fas fa-anchor pop-up-icon"></i> celu.
-                            </p>
-                            <a href="#"> 
-                                <i class="far fa-compass pop-up-close"></i></a>
-                        </div>
-                        <div class="rules ">
-                            <img src="img/instrukcja.jpg" class="rules-img" alt="">
-                        </div>
+    </div>
+    <div class="pop-ups">
+        <div class="pop-up" id="pop-up">
+            <div class="pop-up-content">
+                <div class="tresc">
+                    <div class="rules">
+                        <h3>Zasady na start</h3>
+                        <p>W trakcie waszej podróży odwiedzicie 10 wysp. Jedna wyspa na szlaku to jedna tura gry. Ostatnia wyspa jest większa niż pozostałe i 10 tura może potrwać dłużej - ale o tym póżniej. <br> Przed odwiedzeniem każdej z wysp wybieracie się do lokalnej tawerny i rekrutujecie ludzi, którzy pomogą wam spełnić Wasz cel. Na początku możecie wybrać tylko jedną osobę. Wasz wybór stanie się jawny, gdy wszystkie załogi zdecydują kogo rekrutują - i wtedy zobaczycie efekt waszych działań.<br>
+                        Kolejne wyspy przyniosą dodatkowe możliwości - śledźcie komunikaty pojawiające się w trakcie gry.  W trakcie podróży nie zapomnijcie też o Waszym <i class="fas fa-anchor pop-up-icon"></i> celu.
+                        </p>
+                        <a href="#"> 
+                            <i class="far fa-compass pop-up-close"></i></a>
+                    </div>
+                    <div class="rules ">
+                        <img src="img/instrukcja.jpg" class="rules-img" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="pop-up " id="cel-pomaranczowy">
-                <div class="pop-up-content1 cel-pomaranczowy">
-                    <div class="tresc1">
-                        <div class="rules1">
-                            <p>Inwestor wysłuchał waszych próśb i pożyczył Wam 51 sztuk złota <i class="fas fa-coins"></i> na Waszą ekspedycję. Po zakończeniu gry te pieniądze muszą jednak do niego wrócić. Na szczęście w każdej turze będziecie mogli zdobyć złoto.</p> </br>
-                            <h3>Wasz cel</h3>
-                            <p>Po zakończeniu gry, czyli po odwiedzeniu 10 wysp, mieć w skarbcu jak najwięcej złota.<br>Najpierw jednak oddać inwestorowi co inwestorskie.
-                            </p>
-                            <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="pop-up" id="cel-zielony">
-                <div class="pop-up-content1 cel-zielony">
-                    <div class="tresc1 ">
-                        <div class="rules1">
-                            <p>Wasza ekspedycja to realizacja marzeń o skarbach i bogactwie. Udało się Wam pożyczyć od rodziny i znajomych 44 sztuki złota <i class="fas fa-coins"></i> na początek, ale po zakończeniu gry będziecie musieli to spłacić co do sztuki. W każdej turze będziecie jednak mieli szansę zasilić Wasz skarbiec.</p> </br>
-                            <h3>Wasz cel</h3>
-                            <p>Osiągnąć jak największy zysk na koniec gry, czyli po odwiedzeniu 10 wysp.<br> Pamiętajcie o rozliczeniu się z rodziną!
-                            </p>
-                            <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="pop-up " id="cel-fioletowy">
-                <div class="pop-up-content1 cel-fioletowy">
-                    <div class="tresc1 ">
-                        <div class="rules1">
-                            <p>Zadaniem Waszej ekspedycji jest gromadzenie skarbów. W każdej turze macie szansę zdobyć złoto, 29 sztuk złota <i class="fas fa-coins"></i>, z którymi rozpoczynacie grę, to kredyt, który wzięliście na sfinansowanie wyprawy. Będziecie musieli go oddać po zakończeniu gry.</p> <br>
-                            <h3>Wasz cel</h3>
-                            <p>Mieć jak najwięcej złota po zakończeniu gry, czyli po odwiedzeniu 10 wysp.<br>
-                            Pamiętajcie o konieczności spłaty kredytu!</p>
-                            </p>
-                            <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="pop-up" id="cel-niebieski" >
-                <div class="pop-up-content1  cel-niebieski">
-                    <div class="tresc1">
-                        <div class="rules1">
-                            <p>Wasza ekspedycja została wysłana po to, żeby przywieźć skarby! W każdej turze będziecie mieli okazję pomnożyć swój majątek, Otrzymaliście nieoprocentowaną pożyczkę na start Waszego biznesu. 37 sztuk złota <i class="fas fa-coins"></i>,które macie na start, będziecie musieli zwrócić po zakończeniu gry.</p> <br>
-                            <h3>Wasz cel</h3>
-                            <p>Zakończyć grę z jak największą zdobyczą w złocie.<br>
-                                Pamiętajcie o tym, że pożyczkę trzeba będzie spłacić!</p>
-                            </p>
-                            <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
+        <div class="pop-up " id="cel-pomaranczowy">
+            <div class="pop-up-content1 cel-pomaranczowy">
+                <div class="tresc1">
+                    <div class="rules1">
+                        <p>Inwestor wysłuchał waszych próśb i pożyczył Wam 51 sztuk złota <i class="fas fa-coins"></i> na Waszą ekspedycję. Po zakończeniu gry te pieniądze muszą jednak do niego wrócić. Na szczęście w każdej turze będziecie mogli zdobyć złoto.</p> </br>
+                        <h3>Wasz cel</h3>
+                        <p>Po zakończeniu gry, czyli po odwiedzeniu 10 wysp, mieć w skarbcu jak najwięcej złota.<br>Najpierw jednak oddać inwestorowi co inwestorskie.
+                        </p>
+                        <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="pop-up" id="cel-zielony">
+            <div class="pop-up-content1 cel-zielony">
+                <div class="tresc1 ">
+                    <div class="rules1">
+                        <p>Wasza ekspedycja to realizacja marzeń o skarbach i bogactwie. Udało się Wam pożyczyć od rodziny i znajomych 44 sztuki złota <i class="fas fa-coins"></i> na początek, ale po zakończeniu gry będziecie musieli to spłacić co do sztuki. W każdej turze będziecie jednak mieli szansę zasilić Wasz skarbiec.</p> </br>
+                        <h3>Wasz cel</h3>
+                        <p>Osiągnąć jak największy zysk na koniec gry, czyli po odwiedzeniu 10 wysp.<br> Pamiętajcie o rozliczeniu się z rodziną!
+                        </p>
+                        <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pop-up " id="cel-fioletowy">
+            <div class="pop-up-content1 cel-fioletowy">
+                <div class="tresc1 ">
+                    <div class="rules1">
+                        <p>Zadaniem Waszej ekspedycji jest gromadzenie skarbów. W każdej turze macie szansę zdobyć złoto, 29 sztuk złota <i class="fas fa-coins"></i>, z którymi rozpoczynacie grę, to kredyt, który wzięliście na sfinansowanie wyprawy. Będziecie musieli go oddać po zakończeniu gry.</p> <br>
+                        <h3>Wasz cel</h3>
+                        <p>Mieć jak najwięcej złota po zakończeniu gry, czyli po odwiedzeniu 10 wysp.<br>
+                        Pamiętajcie o konieczności spłaty kredytu!</p>
+                        </p>
+                        <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pop-up" id="cel-niebieski" >
+            <div class="pop-up-content1  cel-niebieski">
+                <div class="tresc1">
+                    <div class="rules1">
+                        <p>Wasza ekspedycja została wysłana po to, żeby przywieźć skarby! W każdej turze będziecie mieli okazję pomnożyć swój majątek, Otrzymaliście nieoprocentowaną pożyczkę na start Waszego biznesu. 37 sztuk złota <i class="fas fa-coins"></i>,które macie na start, będziecie musieli zwrócić po zakończeniu gry.</p> <br>
+                        <h3>Wasz cel</h3>
+                        <p>Zakończyć grę z jak największą zdobyczą w złocie.<br>
+                            Pamiętajcie o tym, że pożyczkę trzeba będzie spłacić!</p>
+                        </p>
+                        <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
