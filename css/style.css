@@ -380,6 +380,7 @@ body{
         font-size:1.6rem;
         border-bottom:4px double var(--font-color);
     }
+  
     tbody tr:last-child{
         border-bottom:4px double var(--font-color);
         border-top:4px double var(--font-color);
@@ -387,23 +388,35 @@ body{
         font-size:1.3rem;
     }
     tbody tr:nth-last-child(2){
+        visibility: hidden; 
+    } 
+    tbody tr:nth-last-child(3){
+        border-bottom:4px double var(--font-color);
+        border-top:4px double var(--font-color);
+        color:var(--font-alternative);
+        font-size:1.3rem; 
+    } 
+    tbody tr:nth-last-child(4){
         background:rgba(0, 29, 23, 0.3); 
     } 
     .thead1 {
     visibility: hidden;
     }
     .plaza{
+        visibility:hidden;
+    }
+/*     .plaza{
         border-collapse: collapse;
     empty-cells: hide;
     width:90%;
     table-layout: fixed;
-    }
+    } */
     .hidden{
      visibility: hidden;
         }
-    .plaza tbody >:last-child{
+/*     .plaza tbody >:last-child{
         font-size:1.3rem;  
-    }
+    } */
     .log-orange{
         color:var(--orange);
     }
