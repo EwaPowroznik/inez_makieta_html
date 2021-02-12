@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="css/pop-up-style.css">
     <title>grid-inez-test</title>
  <body>
+       <!-- header -->
+       <div class="header">
+        <h1 class="header-item">Czarna Inez</h1>
+        <i class="fas fa-skull-crossbones fa-2x header-item"></i>
+        <a href="#pop-up"><i class="far fa-compass fa-2x header-item"></i> </a> 
+    </div>
     <!-- główny container -->
     <div class="container">
-         <!-- header -->
-        <div class="header">
-            <h1 class="header-item">Czarna Inez</h1>
-            <i class="fas fa-skull-crossbones fa-2x header-item"></i>
-            <a href="#pop-up"><i class="far fa-compass fa-2x header-item"></i> </a> 
-        </div>
+       
          <!-- obszar aktualnej tury -->
         <div class="main">
-            <div class="main-title">
-                <h2>W tej rundzie </h2>
-            </div>
             <!-- wydarzenie -->
             <div class="wydarzenie1">
+                <div class="main-title">
+                    <h2>W tej rundzie </h2>
+                </div>
                 <h2>Wydarzenie <i class="fas fa-exclamation"></i></h2>
                 <p>Każda wyspa przynosi nowe wyzwania: </p>
                 <p>'Wizyta tubylców: wyprawa, która na koniec tury posiada najwięcej złota na PLAŻY, otrzyma dodatkowe 2 sztuki złota. </p> 
@@ -45,7 +46,8 @@
                                     type="radio"
                                     id="pomaranczowi"
                                     name="mapfor"
-                                    value="teamA"/>
+                                    value="teamA"
+                                    />
                                     <!-- bind:group={mapChoice}
                                     disabled={mapLabels.pomaranczowi.bought === true} -->
                                 <label for="pomaranczowi"class=" radio log-orange">Pomaranczowi
@@ -92,13 +94,8 @@
                         <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
                         <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
                         <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
-                        <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
-                        <!-- <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
-                        <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p>
-                        <p>&bull;Załoga Zieloni kupiła mapę dla załogi Zieloni! </p>
-                        <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p>
-                        <p>&bull;Załoga Fioletowi kupiła mapę dla załogi Niebiescy!</p> -->
-                    </div>
+                        <p>&bull;Załoga Niebiescy kupiła mapę dla załogi Pomaranczowi!</p> 
+                    </div> 
                 </div>
             </div>
             <div class="tawerna1">
@@ -106,14 +103,14 @@
                 <div class="flex-container">
                     <form id='player_choice'>
                         <div class="item">
-                            <label for="wybor1">Wybieram Pirata
+                            <label for="wybor1">Pirat
                                 <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
                                 <div class="control-me1"></div> </label>
-                            <label for="wybor2">Wybieram Odkrywcę
+                            <label for="wybor2">Odkrywca
                                 <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> </label> 
                         </div>
                         <div class="item">
-                            <label for="wybor3">Wybieram Czarną Inez
+                            <label for="wybor3">Czarna Inez
                                 <input type="radio" id="wybor3" name="dziewczynka" value="Czarna Inez" class="visually-hidden">
                                 <div class="control-me3"></div>
                             </label>
@@ -151,8 +148,8 @@
                         <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                         <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
                         </tr>
-                        <!-- szereg wartości do przetestowania makiety, do skasowania -->
-                        <tr>
+
+                        <!-- <tr>
                         <td >2</td>
                         <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
                         <td id = "scoreB_1">odkrywca <br>  Czarna Inez</td>
@@ -192,50 +189,48 @@
                         <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
                         <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
                         <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
-                        </tr>
+                        </tr>  -->
+                        <!-- <td >8</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <td >9</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr> 
+                        <td >10</td>
+                        <td id = "scoreA_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreB_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreC_1">odkrywca <br> Czarna Inez</td>
+                        <td id = "scoreD_1">odkrywca <br> Czarna Inez</td>
+                        </tr>   -->
                         <tr>
                         <td id="totalscore">Wynik</td>
                         <td id="scoreA">00</td>
-                        <td id="scoreB">Trochę mniej niż wy</td>
-                        <td id="scoreC">Trochę więcej niż wy</td>
-                        <td id="scoreD">Dużo więcej niż wy</td>
+                        <td id="scoreB">00</td>
+                        <td id="scoreC">00</td>
+                        <td id="scoreD">00</td>
                         </tr>
                         <tr>
-                        <td id="totalscore">Plaża</td>
-                        <td id="scoreA">00</td>
-                        <td id="scoreB" >00</td>
-                        <td id="scoreC">00</td>
-                        <td id="scoreD">00</td>
-                        </tr>
-                        <tr class="plaza">
-                        <td id="totalscore">Plaża</td>
-                        <td id="scoreA">00</td>
-                        <td id="scoreB" >00</td>
-                        <td id="scoreC">00</td>
-                        <td id="scoreD">00</td>
-                        </tr>
+                            <td id="totalscore">Plaża</td>
+                            <td id="scoreA">00</td>
+                            <td id="scoreB" >00</td>
+                            <td id="scoreC">00</td>
+                            <td id="scoreD">00</td>
+                            </tr>
+                            <tr class="plaza">
+                            <td id="totalscore">Plaża</td>
+                            <td id="scoreA">00</td>
+                            <td id="scoreB" >00</td>
+                            <td id="scoreC">00</td>
+                            <td id="scoreD">00</td>
+                            </tr>
                     </tbody>  
-<!--                 </table>
-                <table class="plaza">
-                    <thead class="hidden">
-                        <tr>
-                        <th>Runda</th>
-                        <th class="log-orange">Pomaranczowi</th>
-                        <th class="log-green">Zieloni</th>
-                        <th class="log-violet">Fioletowi</th>
-                        <th class="log-blue">Niebiescy</th>
-                        </tr>
-                    </thead>
-                    <tbody >
-                    <tr>
-                        <td id="totalscore">Plaża</td>
-                        <td id="scoreA">Trochę mniej niż wy</td>
-                        <td id="scoreB" >00</td>
-                        <td id="scoreC">Trochę więcej niż wy</td>
-                        <td id="scoreD">Dużo mniej niż wy</td>
-                        </tr>
-                    </tbody>
-                </table> -->
+                </table>
                 <div class="end-score">
                     <div>
                         <img src="img/inez-nobg.png" class="end-score-ikon"> 
@@ -250,16 +245,16 @@
         <div class="aside">
             <div class="stan">
                 <div>
-                    <h3>Grasz jako:</h3>
-                    <h3>Twój pseudonim: </h3>
+                    <h4>Grasz jako: </h4>
+                    <h4>Twój pseudonim: </h4>
                 </div>
                 <div>
-                    <h3>Twój cel  <a href="#cel-niebieski"><i class="fas fa-anchor"></i></a></h3>
+                    <h4>Twój cel  <a href="#cel-pomaranczowy"><i class="fas fa-anchor"></i></a></h4>
                 </div>
             </div> 
             <div class="runda">
-                <h2>Runda</h2>
-                <h2>Aktywni gracze:</h2>
+                <h3>Runda</h3>
+                <h3>Aktywni gracze:</h3>
             </div>
             <div class="gracze">
                 <div class="orange obecnosc border-left"><span class="team-name">Pomaranczowa Załoga</span>
@@ -297,7 +292,7 @@
                 </div>
                 <div class="blue obecnosc border-left"><span  class="team-name">Niebieska Załoga</span>
                     <ul class="li-obecnosc">
-                        <div class="li">Gracz1</div>
+                        <div class="li">Długie imię gracza</div>
                         <div class="li">Gracz2</div>
                         <div class="li">Gracz3</div>
                         <div class="li">Gracz4</div>
@@ -328,7 +323,7 @@
                         <a href="#"> 
                             <i class="far fa-compass pop-up-close"></i></a>
                     </div>
-                    <div class="rules ">
+                    <div class="rules2 ">
                         <img src="img/instrukcja.jpg" class="rules-img" alt="">
                     </div>
                 </div>
@@ -391,6 +386,20 @@
                 </div>
             </div>
             
+        </div>
+        <div class="pop-up" id="pop-up">
+            <div class="pop-up-content">
+                <div class="tresc">
+                    <div class="rules">
+                        <h3>Zasady na start</h3>
+                        <p>W trakcie waszej podróży odwiedzicie 10 wysp. Jedna wyspa na szlaku to jedna tura gry. Ostatnia wyspa jest większa niż pozostałe i 10 tura może potrwać dłużej - ale o tym póżniej. <br> Przed odwiedzeniem każdej z wysp wybieracie się do lokalnej tawerny i rekrutujecie ludzi, którzy pomogą wam spełnić Wasz cel. Na początku możecie wybrać tylko jedną osobę. Wasz wybór stanie się jawny, gdy wszystkie załogi zdecydują kogo rekrutują - i wtedy zobaczycie efekt waszych działań.<br>
+                        Kolejne wyspy przyniosą dodatkowe możliwości - śledźcie komunikaty pojawiające się w trakcie gry.  W trakcie podróży nie zapomnijcie też o Waszym <i class="fas fa-anchor pop-up-icon"></i> celu.
+                        </p>
+                        <a href="#"> 
+                            <i class="far fa-compass pop-up-close"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
