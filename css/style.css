@@ -482,7 +482,7 @@ body{
         grid-template-rows: repeat(9, 1fr); 
     }
         .li-obecnosc{
-            column-count: 2;
+/*             column-count: 2; */
             padding:0 5px;
         }
             .obecnosc{
