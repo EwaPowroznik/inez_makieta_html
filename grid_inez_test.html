@@ -103,21 +103,36 @@
                 <div class="flex-container">
                     <form id='player_choice'>
                         <div class="item">
-                            <label for="wybor1">Pirat
+                            <div class="tooltip">
+                                <label for="wybor1">Pirat
+                                <span class="tooltiptext">Pirat ukradnie po 3<i class="fas fa-coins"></i>od każdej załogi, a Tobie odda po 2<i class="fas fa-coins"></i>od każdej obrabowanej załogi.</span>
                                 <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
-                                <div class="control-me1"></div> </label>
-                            <label for="wybor2">Odkrywca
-                                <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> </label> 
+                                <div class="control-me1"></div> 
+                                </label> 
+                            </div>
+                            <div class="tooltip">
+                                <label for="wybor2">Odkrywca
+                                <span class="tooltiptext">Odkrywca zdobędzie dla Ciebie złoto na wyspie i przyniesie Ci 3<i class="fas fa-coins"></i></span>
+                                <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" >
+                                <div class="control-me2"></div> 
+                                </label>  
+                            </div>
                         </div>
                         <div class="item">
-                            <label for="wybor3">Czarna Inez
+                            <div class="tooltip">
+                                <label for="wybor3">Czarna Inez
+                                <span class="tooltiptext">Czarna Inez chroni Cię przed Piratem (nie zostaniesz okradziony!). Jej wynajęcie kosztuje 2 <i class="fas fa-coins"></i></span>
                                 <input type="radio" id="wybor3" name="dziewczynka" value="Czarna Inez" class="visually-hidden">
-                                <div class="control-me3"></div>
-                            </label>
-                            <label for="wybor4">Płynę bez Inez
+                                <div class="control-me3"> </div>
+                               </label>  
+                            </div>
+                            <div class="tooltip"> 
+                                <label for="wybor4">Płynę bez Inez
+                                <span class="tooltiptext">Nie masz ochrony przed Piratem, ale też nic nie płacisz!</span>
                                  <input type="radio" id="wybor4" name="dziewczynka" value="Biala Inez" class="visually-hidden" >
                                 <div class="control-me4"></div>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                      </form>
                 </div>
