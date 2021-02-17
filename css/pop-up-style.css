@@ -6,10 +6,12 @@
 :root{
     --font-color:blanchedalmond;
     --ikon:rgb(14, 14, 14);
-    --orange:rgb(251, 121, 0);
-    --violet:rgb(128, 27, 141);
-    --blue:rgb(0, 132, 255);
+    --orange:rgb(209, 101, 0);
+    --violet:rgb(168, 2, 190);
+    --blue:rgb(0, 104, 200);
     --green:rgb(0, 160, 74);
+    --before:rgba(0, 29, 23, 0.6); 
+    --before-light:rgba(0, 69, 83, 0.644);
 }
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -133,6 +135,10 @@ body{
     color:var(--ikon);
     font-size:1.5rem;
 }
+.rules i:hover{
+    stop-color:var(--font);
+
+}
 .rules{
     width:49%;
     height:auto;
@@ -146,10 +152,9 @@ body{
     flex-wrap: wrap;
     overflow: auto;
     color:var(--ikon);
-
 }
 .rules-img{
-    width:80%;
+    width:70%;
     height:auto;
     margin:10px;
     box-shadow:  0px 0px 50px 10px var(--font-color); 
@@ -169,8 +174,6 @@ body{
     color:var(--font-color);
     flex-wrap: wrap;
     overflow: auto;
-   
-
 }
 
 /* ikona zamykająca */
@@ -194,6 +197,94 @@ body{
     transition:all,3s;
     visibility: hidden;
 }
+
+/* instrukcja */
+.pop-up p{
+    font-size:1.2rem;
+}
+.przyklad{
+    width:95%;
+    height:90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    box-sizing:border-box;
+    padding:20px;
+    flex-wrap: wrap;
+    overflow: auto;
+    color:var(--ikon);
+    
+}
+.przyklad1{
+    max-width:100%;
+    display:flex; 
+    justify-content:space-around; 
+    flex:1 1 auto;
+}
+
+.zespol{
+    display:flex;
+    flex-direction:column;
+    margin:10px 30px;
+}
+.zespol h3{
+    display:block;
+}
+.p{
+    width:50%;
+    margin-left:20px;  
+}
+.p span{
+   font-size:1.6rem;
+   font-weight: 600; 
+}
+.fa-arrow-right{
+    position:fixed;
+    right:1rem;
+    top:50%;
+    color:var(--before-light);
+    padding:5px;
+}
+.fa-arrow-right:hover{
+    color:var(--font-alternative);
+    transition: 1s;
+}
+.tura{
+    width:95%;
+    height:90%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:var(--ikon);
+    padding:20px; 
+}
+.tura div{
+    margin:5px;
+    padding:5px;
+}
+.rewerse{
+    display:flex;
+}
+.row{
+    display:flex;
+    flex-direction: column;
+}
+.karta{
+    display:flex;
+}
+.cover{
+    width:40%;
+    height:auto;
+    margin:5px;
+}
+
 
 
  
