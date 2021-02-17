@@ -327,7 +327,8 @@
         </div>
     </div>
     <div class="pop-ups">
-        <div class="pop-up" id="pop-up">
+
+         <div class="pop-up" id="pop-up">
             <div class="pop-up-content">
                 <div class="tresc">
                     <div class="rules">
@@ -344,6 +345,7 @@
                 </div>
             </div>
         </div>
+
         <div class="pop-up " id="cel-pomaranczowy">
             <div class="pop-up-content1 cel-pomaranczowy">
                 <div class="tresc1">
@@ -356,8 +358,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
         <div class="pop-up" id="cel-zielony">
             <div class="pop-up-content1 cel-zielony">
                 <div class="tresc1 ">
@@ -369,9 +371,9 @@
                         <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
                     </div>
                 </div>
-            </div>
-            
+            </div> 
         </div>
+
         <div class="pop-up " id="cel-fioletowy">
             <div class="pop-up-content1 cel-fioletowy">
                 <div class="tresc1 ">
@@ -384,9 +386,9 @@
                         <a href="#"> <i class="fas fa-anchor pop-up-close"></i></a>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
+
         <div class="pop-up" id="cel-niebieski" >
             <div class="pop-up-content1  cel-niebieski">
                 <div class="tresc1">
@@ -400,22 +402,157 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-        <div class="pop-up" id="pop-up">
+
+        <!-- treść dla trenera -->
+
+        <div class="pop-up" id="instrukcja">
             <div class="pop-up-content">
-                <div class="tresc">
-                    <div class="rules">
-                        <h3>Zasady na start</h3>
-                        <p>W trakcie waszej podróży odwiedzicie 10 wysp. Jedna wyspa na szlaku to jedna tura gry. Ostatnia wyspa jest większa niż pozostałe i 10 tura może potrwać dłużej - ale o tym póżniej. <br> Przed odwiedzeniem każdej z wysp wybieracie się do lokalnej tawerny i rekrutujecie ludzi, którzy pomogą wam spełnić Wasz cel. Na początku możecie wybrać tylko jedną osobę. Wasz wybór stanie się jawny, gdy wszystkie załogi zdecydują kogo rekrutują - i wtedy zobaczycie efekt waszych działań.<br>
-                        Kolejne wyspy przyniosą dodatkowe możliwości - śledźcie komunikaty pojawiające się w trakcie gry.  W trakcie podróży nie zapomnijcie też o Waszym <i class="fas fa-anchor pop-up-icon"></i> celu.
-                        </p>
-                        <a href="#"> 
-                            <i class="far fa-compass pop-up-close"></i></a>
+                <a href="#instrukcja1"> <i class="fas fa-arrow-right fa-3x"></i></i></a>
+                <div class="tura">
+                    <h2>Przykładowa tura</h2>
+                    <div class="przyklad1">
+                        <div class="zespol"><div class="rewerse"><i class="fas fa-users fa-4x log-orange"></i><i class="fas fa-laptop fa-4x"></i></div><h3>Załoga Pomaranczowa</h3>
+                        </div>
+                        <div class="zespol"><div class="rewerse"><i class="fas fa-users fa-4x log-blue"></i><i class="fas fa-laptop fa-4x"></i></div><h3>Załoga Niebieska</h3></div>
+                        <div class="zespol"><div class="rewerse"><i class="fas fa-users fa-4x log-green"></i><i class="fas fa-laptop fa-4x"></i></div><h3>Załoga Zielona</h3></div>
+                        <div class="zespol"><div class="rewerse"><i class="fas fa-users fa-4x log-violet"></i><i class="fas fa-laptop fa-4x"></i></div><h3>Załoga Fioletowa</h3></div>
+                    </div>
+                    <div class="przyklad1">
+                        <div class="p"><p>Wszelkie decyzje w grze podejmujecie zespołowo. Każde z was ma dostęp do <span>Tawerny <i class="fas fa-beer"></i></span> i może wybrać postać, którą zabierzecie ze sobą na najbliższą wyspę,ale raz podjęta decyzja obowiązuje całą Załogę. </p>
+                            <button class="message_form_button " type="submit" disabled>Potwierdzam!</button>  
+                        </div>
+                        <div class="item">
+                            <label>Pirat
+                                <input type="radio" id="wybor1" name="chlopczyk" value="pirat" class="visually-hidden">
+                                <div class="control-me1"></div> 
+                             </label>
+                             <label>Odkrywca
+                                 <input type="radio" id="wybor2" name="chlopczyk" value="odkrywca" class="visually-hidden" > <div class="control-me2"></div> 
+                             </label>  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="pop-up" id="instrukcja1">
+            <div class="pop-up-content">
+                <a href="#instrukcja2"> 
+                    <i class="fas fa-arrow-right fa-3x move"></i></i></a>
+                <div class="tura">
+                    <h2>Przykładowa tura</h2>
+                    <p>W tej turze wyobraźmy sobie, że wszystkie Załogi mają na początku po 10 <i class="fas fa-coins"></i></p>
+                    <p>Każda załoga wybiera, kogo chce zatrudnić. Dwie Załogi - <span class="log-blue">Niebieska</span> i <span class="log-green">Zielona</span> zrekrutowały w Tawernie Odkrywcę, dwie - <span class="log-orange">Pomaranczowa</span> i <span class="log-violet">Fioletowa</span> - Pirata.</p>
+                    <p>Zacznijmy od działań Odkrywcy</p>
+                        <div class="rewerse">
+                            <div class="karta">
+                            <div><img src="img/odkrywca-picked.png"></div>
+                             <div><h2><span class="log-blue">Niebieska</span> Załoga</h2>
+                            <p>Zrekrutowała Odkrywcę. Odkrywca znalazł 3 <i class="fas fa-coins log-blue"></i></p>
+                            <h3>Niebieska Załoga ma 13 <i class="fas fa-coins log-blue"></i></h3>
+                            </div>
+                            </div>
+                            <div class="karta">
+                            <div><img src="img/odkrywca-picked.png"></div>
+                            <div><h2><span class="log-green">Zielona</span> Załoga</h2>
+                            <p>Zrekrutowała Odkrywcę. Odkrywca znalazł 3 <i class="fas fa-coins log-green"></i></p>
+                            <h3>Zielona Załoga ma 13 <i class="fas fa-coins log-green"></i></h3>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="instrukcja2">
+            <div class="pop-up-content">
+                <a href="#instrukcja3"> 
+                    <i class="fas fa-arrow-right fa-3x move"></i></i></a>
+                <div class="tura">
+                    <h2>Przykładowa tura</h2>
+                    <p>Przejdźmy teraz do działań Pirata.</p>
+                    <p>Stan sakiewek naszych załóg to <span class="log-orange"> Załoga Pomaranczowa 10 <i class="fas fa-coins"></i></span><span class="log-blue"> Załoga Niebieska 13 <i class="fas fa-coins"></i></span><span class="log-green"> Załoga Zielona 13 <i class="fas fa-coins"></i></span><span class="log-violet"> Załoga Fioletowa 10 <i class="fas fa-coins"></i></span></p>
+                        <div class="rewerse">
+                            <div class="karta">
+                                <div><img src="img/korsarz-picked.png"></div>
+                                <div><h2><span class="log-orange">Pomaranczowa</span> Załoga</h2>
+                                    <p>Zrekrutowała Pirata. Pirat zrabował:</p>
+                                    <p> -3 <span class="log-blue"> <i class="fas fa-coins"></i> od Załogi Niebieskiej</i> </span> </p>
+                                    <p> -3 <span class="log-violet"> <i class="fas fa-coins"></i> od Załogi Fioletowej</i> </span> </p>
+                                    <p> -3 <span class="log-green"> <i class="fas fa-coins"></i> od Załogi Zielonej</i> </span> </p>
+                                    <p>Z czego Pirat otrzymał 1 <i class="fas fa-coins log-blue"></i>, 1 <i class="fas fa-coins log-violet"></i>, 1<i class="fas fa-coins log-green"></i>.</p>
+                                    <p>I oddał <span class="log-orange">Pomaranczowej</span> Załodze  +2 <i class="fas fa-coins log-blue"></i>, +2 <i class="fas fa-coins log-violet"></i>, +2<i class="fas fa-coins log-green"></i>.
+                                </div>
+                            </div>
+                            <div class="karta">
+                                <div>
+                                <h3><span class="log-orange">Pomaranczowa </span> Załoga ma 16 <i class="fas fa-coins log-orange"></i></h3>
+                                <p>Pozostałe Załogi:</p>
+                                <p> <span class="log-blue"> Niebieska Załoga 10 <i class="fas fa-coins"></i> </span> </p>
+                                <p><span class="log-violet">  Fioletowa Załoga 7 <i class="fas fa-coins"></i> </span> </p>
+                                <p> <span class="log-green"> Zielona Załoga 10 <i class="fas fa-coins"></i></span> </p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="instrukcja3">
+            <div class="pop-up-content">
+                <a href="#instrukcja4"> 
+                    <i class="fas fa-arrow-right fa-3x move"></i></i></a>
+                <div class="tura">
+                    <h2>Przykładowa tura</h2>
+                    <p>Stan sakiewek naszych załóg to <span class="log-orange">Załoga Pomaranczowa 16 <i class="fas fa-coins"></i></span><span class="log-blue"> Załoga Niebieska 10 <i class="fas fa-coins"></i></span><span class="log-green"> Załoga Zielona 10 <i class="fas fa-coins"></i></span><span class="log-violet"> Załoga Fioletowa 7 <i class="fas fa-coins"></i></span></p>
+                        <div class="rewerse">
+                            <div class="karta">
+                                <div><img src="img/korsarz-picked.png"></div>
+                                <div><h2><span class="log-violet">Fioletowa</span> Załoga</h2>
+                                    <p>Zrekrutowała Pirata. Pirat zrabował:</p>
+                                    <p> -3 <span class="log-blue"> <i class="fas fa-coins"></i> od Załogi Niebieskiej</i> </span> </p>
+                                    <p> -3 <span class="log-green"> <i class="fas fa-coins"></i> od Załogi Zielonej</i> </span> </p>
+                                    <p> -3 <span class="log-orange"> <i class="fas fa-coins"></i> od Załogi </i> Pomaranczowej </span> </p>
+                                    <p>Z czego Pirat otrzymał 1 <i class="fas fa-coins log-blue"></i>, 1 <i class="fas fa-coins log-green"></i>, 1<i class="fas fa-coins log-orange"></i>.</p>
+                                    <p>I oddał <span class="log-violet">Fioletowej</span> Załodze  +2 <i class="fas fa-coins log-blue"></i>, +2 <i class="fas fa-coins log-green"></i>, +2<i class="fas fa-coins log-orange"></i>.
+                                </div>
+                            </div>
+                            <div class="karta">
+                                <div>
+                                <h3><span class="log-violet">Fioletowa </span> Załoga ma 13 <i class="fas fa-coins log-violet"></i></h3>
+                                <p>Pozostałe Załogi:</p>
+                                <p> <span class="log-blue"> Niebieska Załoga 7 <i class="fas fa-coins"></i> </span> </p>
+                                <p><span class="log-green">  Zielona Załoga 7 <i class="fas fa-coins"></i> </span> </p>
+                                <p> <span class="log-orange"> Pomaranczowa Załoga 13 <i class="fas fa-coins"></i></span> </p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="instrukcja4">
+            <div class="pop-up-content">
+                <a href="#container"> <i class="fas fa-arrow-right fa-3x"></i></i></a>
+                <div class="przyklad">
+                    <h2>Przykładowa tura</h2>
+                    <div>
+                        <img class="cover" src="img/cover.png">
+                    </div>
+                    <div class="przyklad1">
+                        <div>
+                            <p>Po zakończeniu naszej tury stan sakiewek przedstawia się następująco: </p>
+                            <p><span class="log-blue">Niebieska Załoga</span> i <span class="log-green">Zielona Załoga</span> - zarobiły po 3 <i class="fas fa-coins"></i> lecz Piraci ukradli im po 6 <i class="fas fa-coins"></i> - na koniec tury mają po  7<i class="fas fa-coins">.</i></p>
+                            <p><span class="log-orange">Pomaranczowa Załoga</span> i <span class="log-violet">Fioletowa Załoga</span> - otrzymały od swoich Piratów po 6 <i class="fas fa-coins"></i> lecz zostali też okradzeni po 3 <i class="fas fa-coins"></i><br> - na koniec tury mają po 13<i class="fas fa-coins">.</i></p>
+                            <p> W trakcie gry pojawią się też inne opcje zarobku - wybierajcie rozważnie swoich towarzyszy podróży. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
     </div>
 </body>
 </html>
