@@ -13,6 +13,7 @@
     --green:rgb(0, 160, 74);
     --before:rgba(0, 29, 23, 0.6); 
     --before-light:rgba(0, 69, 83, 0.644);
+    --before-darker:rgba(12, 8, 8, 0.4);
 }
 body{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -32,16 +33,20 @@ body{
     background:rgba(17, 91, 104, 0.4); 
 
  } */
+ .rewerse{
+    display:flex;
+}
 
 /* główny container */
 .container{
-    min-height:100vh; 
     width:100vw;
     max-width:100%;  
     display:grid;
-    grid-template-columns:repeat(16, 6.27vw);
-    grid-template-rows:repeat(16, 6.5vh); 
+    grid-template-columns:repeat(16, 6.24vw);
+    grid-template-rows:repeat(16, 6.24vh); 
     box-sizing:border-box;
+    margin:0;
+    padding:0;
     overflow: hidden;
 }   
 /* header */
@@ -100,30 +105,25 @@ body{
     padding:5px;
     margin:4px;
 }
-.stan .fa-anchor:hover{
-    cursor:pointer;
-    transition: 1s;
-    background:var(--ikon);
-    border-radius: 50%;
-    color:var(--font-color);
-}
+
 /* bieżąca runda */
  .main{
     grid-column:1 /span 7;
-    grid-row:1 /span 18;
+    grid-row:1 /span 17;
     position:relative;
     width:100%;
     height:100%;
     background:url(https://source.unsplash.com/okVXy9tG3KY) center center/cover; 
     display:grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
+    padding-left:-2px;
 }
 
 .main *{
      z-index: 4;
 }
-.main h2, h3, p{
+.main h2, h4, p{
     margin: 0 auto;
     padding:5px 15px;
     text-align:justify;
@@ -152,13 +152,13 @@ body{
     }
     .wydarzenie1 {
         grid-column: 1 / span 5;
-        grid-row: 1 / span 2; 
+        grid-row: 1 / span 1; 
     }
     /* mapa */
     .mapa{
         position:relative;
         grid-column:1 /span 5;
-        grid-row:3 /span 2;
+        grid-row:2 /span 2;
         background: url(https://source.unsplash.com/1-29wyvvLJA) center center/cover;
     } 
     .mapa::before{
@@ -168,7 +168,7 @@ body{
         left:0;
         width:100%;
         height:100%;
-        background:rgba(46, 33, 33, 0.4);
+        background:var(--before-darker);
         z-index:-1;
      }
         .item1{
@@ -199,12 +199,12 @@ body{
     /* tawerna */
     .tawerna {
         grid-column: 1 / span 5;
-        grid-row: 3 / span 4;
+        grid-row: 4 / span 2;
         background: url(https://source.unsplash.com/05nD5VT-714)no-repeat center center/cover;
     }
     .tawerna1 {
         grid-column: 1 / span 5;
-        grid-row: 5 / span 2;
+        grid-row: 4 / span 2;
         background: url(https://source.unsplash.com/05nD5VT-714)no-repeat center center/cover;
     }
 /* tawerna wybór postaci */
@@ -214,6 +214,9 @@ body{
         align-items: center;
         justify-content:center;
         } 
+    .mapa form{
+            max-width:450px;
+    }
     .item{
         display:inline-flex;
         flex:1 1 450px;
@@ -288,6 +291,8 @@ body{
         content:url("../img/biala-picked.png"); 
     } 
 
+    /* butony */
+
     .message_form_button{
         flex:1 0 360px;
         width:180px;
@@ -307,7 +312,37 @@ body{
         font-size: 1.2rem;
         letter-spacing: 2px;
         font-weight: 700;
-        }
+        } 
+    .anchor_button{
+        flex:1;
+        text-align: top;
+        width:120px;
+        height:35px;
+        cursor:pointer;
+        line-height: 35px;
+        text-align:center;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size:1rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding:auto;
+        background:var(--font-alternative);
+        border:none;
+        border-radius: 3px;
+     }
+     .anchor_button a{
+         text-decoration:none;
+         color:var(--ikon);
+     }
+     .anchor_button i{
+        color:var(--ikon);
+    }
+    .anchor_button:hover{
+        background:var(--font-color);
+        border:1px solid var(--font-alternative);
+        transition:all 2s;
+    }
+   
     .message_form_button:hover{
         color:var(--font-alternative);
         background-color: var(--ikon);
@@ -317,12 +352,39 @@ body{
         color:var(--font-alternative);
         background-color: var(--ikon);
     }
+
+.pulsing_button{
+    flex:1 0 360px;
+    width:180px;
+    height:30px;
+    cursor:pointer;
+    display:block;
+    border:none;
+    margin:auto;
+    margin-bottom:10px;
+    margin-top: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:var(--font-alternative);
+    background-color: var(--ikon);
+    box-shadow: 0 0 0 0 rgba(244, 166, 96, 0.7);
+    border-radius:2px;
+    animation: pulse 1.25s infinite cubic-bezier(0.6, 0, 0, 1.2);
+}
+
+@keyframes pulse {
+    to
+    {box-shadow: 0 0 0 25px rgba(232, 76, 61, 0);
+    }
+}
     
 /* przebieg gry */
 .log{
     background:url(https://source.unsplash.com/sLAk1guBG90)no-repeat center center/cover;
     grid-column:8 /span 6;
-    grid-row:1 /span 18;
+    grid-row:1 /span 17;
     position:relative;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -427,6 +489,7 @@ body{
             font-weight:700;
             padding:10px;
             text-shadow: 2px 2px 5px var(--ikon);
+
         }
         .end-score-ikon{
             width:20%;
@@ -440,7 +503,7 @@ body{
     width:100%;
     height:100%;
     grid-column: 14 /span 3;
-    grid-row:1 /span 18;
+    grid-row:1 /span 17;
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows:repeat(12, 1fr); 
@@ -461,7 +524,8 @@ body{
         grid-column:1/span 3;
         grid-row: 1 /span 1;
         display:flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+
         align-items: center;
         text-align: center; 
     }
@@ -485,10 +549,6 @@ body{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(9, 1fr); 
     }
-        .li-obecnosc{
-/*             column-count: 2; */
-            padding:0 5px;
-        }
             .obecnosc{
                 display:flex;
                 flex-direction: column;
@@ -507,7 +567,7 @@ body{
             }
             .border-right{
                 text-align:left;
-                padding-right:1rem;
+                padding-right:2.5rem;
             }
             .border-left::after{
                 content: '';
@@ -535,14 +595,14 @@ body{
             .team-name{ 
                 position: absolute;
                 text-align: center;
-                top: -0.2rem;
+                top: -0.6rem;
                 left: 1rem;
                 right: 1rem;
                 white-space: nowrap;
                 overflow: hidden;
                 text-transform: uppercase;
                 font-style:italic;
-                font-size:1.1rem;
+                font-size:1rem;
                 width: 95%;  
             }
             .orange{
@@ -738,6 +798,7 @@ body{
                     grid-row:17/span 3;
                 } */
                 } 
+              
 
 
             
