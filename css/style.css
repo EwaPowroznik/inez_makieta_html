@@ -31,12 +31,12 @@ body{
     margin:0;
     padding:0;
     overflow: hidden;
-    background: url(https://source.unsplash.com/6vvIBTvL90A);
+    background: url(../img/container.jpg);
 } 
 
 /* header */
 .header{
-    background:url("https://source.unsplash.com/6ArTTluciuA")no-repeat center/cover;
+    background:url("../img/header.jpg")no-repeat center/cover;
     position:relative;
     top:0;
     display:flex;
@@ -115,11 +115,11 @@ body{
         }
      /*wydarzenie  */
     .wydarzenie {
-        background: url(https://source.unsplash.com/wRMvOZ1CufQ)no-repeat center center/cover;
+        background: url("../img/event.jpg")no-repeat center center/cover;
         padding:10px;
     }
     .wydarzenie1 {
-        background: url(https://source.unsplash.com/wRMvOZ1CufQ)no-repeat center center/cover;
+        background: url("../img/event.jpg")no-repeat center center/cover;
         padding:10px;
     }
     .rewerse{
@@ -144,7 +144,7 @@ body{
     /* mapa */
     .mapa{
         position:relative;
-        background: url(https://source.unsplash.com/1-29wyvvLJA) center center/cover;
+        background: url("../img/map.jpg") center center/cover;
         padding:10px;
     } 
     .mapa::before{
@@ -184,11 +184,11 @@ body{
         }
     /* tawerna */
     .tawerna {
-        background: url(https://source.unsplash.com/05nD5VT-714)no-repeat center center/cover;
+        background: url("../img/tawern.jpg")no-repeat center center/cover;
         padding:10px;
     }
     .tawerna1 {
-        background: url(https://source.unsplash.com/05nD5VT-714)no-repeat center center/cover;
+        background: url("../img/tawern.jpg")no-repeat center center/cover;
         padding:10px;
     }
 /* tawerna wybór postaci */
@@ -365,7 +365,7 @@ body{
     
 /* przebieg gry */
 .log{
-    background:url(https://source.unsplash.com/sLAk1guBG90)no-repeat center center/cover;
+    background:url("../img/log.jpg")no-repeat center center/cover;
     position:relative;
     flex:2;
     width:100%;
@@ -467,6 +467,7 @@ body{
         .end-score-ikon{
             width:20%;
             height:auto;
+            margin:auto;
         }
         
 /* aside - stan graczy */
